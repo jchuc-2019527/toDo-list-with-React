@@ -1,0 +1,75 @@
+.todo-container {
+    display: flex;
+    height: 5rem;
+    width: 90%;
+    border-radius: 10px;
+    margin: 20px 20px;
+    margin-right: 2rem;
+    background: linear-gradient(90deg, #6813ad 10%, rgb(193, 119, 228) 90%);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.todo-checkbox {
+    align-self: center;
+    margin: 0 5px;
+}
+.check{
+    margin-left: 0.7rem;
+    align-self: center;
+    height: 2rem;
+    width: 7%;
+    cursor: pointer;
+}
+
+.todo-text-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2px 2px;
+    margin: 5px 0;
+}
+
+.todo-text{
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 500px;
+    word-break: break-word;
+    align-self: center;
+}
+
+.todo-btn{
+    display: flex;
+    align-items: center;
+}
+
+.btn-group{
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.iconD {
+    margin-left: -8rem;
+    margin-top: -1rem;
+    align-self: center;
+    height: 3rem;
+    width: 4rem;
+    cursor: pointer;    
+}
+
+.iconU {
+    margin-left: -3rem;
+    margin-top: -1rem;
+    align-self: center;
+    height: 3rem;
+    width: 4rem;
+    cursor: pointer;     
+}
+
+.completed{
+    text-decoration: line-through #eee;
+    color: #cccc
+}

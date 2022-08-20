@@ -1,0 +1,180 @@
+#todo-add-form{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+#todo-add-input{
+    font-size: 20px;
+    color: #ccc;
+    display: block;
+    width: 500px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #ccc;
+    margin-top: 1rem;
+    padding: 10px 10px;
+}
+
+#todo-add-button:focus{
+    outline: none;
+}
+
+.todoForm-label {
+    color: #696969;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    pointer-events: none;
+    left: 250px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+}
+
+#todo-add-input:focus ~ .todoForm-label,
+#todo-add-input:valid ~ .todoForm-label{
+    top: -50px;
+    font-size: 55px;
+    color: #5468ff;
+}
+
+.bar{
+    position: relative;
+    display: block;
+    padding: 0 30px;
+}
+
+.bar::before,
+.bar::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #5468ff;
+    transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+}
+
+.bar::before{
+    left: 50px;
+}
+
+.bar::after{
+    right: 50px;
+}
+
+#todo-add-input:focus ~ .bar::before,#todo-add-input:focus ~ .bar::after{
+    width: 250px;
+}
+
+.highlight{
+    position: absolute;
+    height: 60%;
+    width: 70px;
+    top: 25%;
+    left: 10%;
+    margin-left: -37px;
+    pointer-events: none;
+    opacity: 0,5;
+}
+
+#todo-add-input:focus ~ .highlight{
+    animation: inputHighlight 0.2s ease;
+   -webKit-animation: inputHighlight 0.2s ease;
+    -moz-animation: inputHighlight 0.2s ease;
+}
+
+@-webkit-keyframes inputHighlight{
+    from{
+        background: #5468ff;
+    }
+    to{
+        width: 0;
+        background: #5468ff;
+    }
+}
+
+@-moz-keyframes inputHighlight{
+    from{
+        background: #5468ff;
+    }
+    to{
+        width: 0;
+        background: #5468ff;
+    }
+}
+
+@keyframes inputHighlight{
+    from{
+        background: #5468ff;
+    }
+    to{
+        width: 0;
+        background: #5468ff;
+    }
+}
+.form-submit-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.btn-icon-add {
+    margin-left: -40px;
+    margin-top: -20px;
+    height: 50px;
+    width: 100px;
+    color: #095bfe;
+}
+
+.btn-icon-save {
+    margin-left: -3rem;
+    margin-top: -10rem;
+    align-self: center;
+    height: 3rem;
+    width: 4rem;
+    cursor: pointer;    
+}
+
+#todo-edit-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    margin: 5px 0;
+    width: 100%;
+    height: 4rem;
+}
+
+#todo-edit-input{
+    font-size: 1.6rem;
+    display: block;
+    width: 265px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #757575;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+#todo-edit-input:focus{
+    outline: none;
+}
+
+#todo-edit-input:focus  ~ .bar::before, #todo-edit-input:focus  ~ .bar::after{
+    width: 50px;
+}
+
+

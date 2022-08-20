@@ -1,0 +1,19 @@
+/*
+Los archivos para index.css son de las cosas en general
+*/
+*/
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(3deg, #8c9bbd 0%, #cc8282 10%);
+}  

@@ -1,0 +1,13 @@
+/* 
+Los archivos de css de app son de las cosas que colocamos en App.jsx
+*/
+
+.app-container1 {
+    margin-top: 3rem;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(90%, rgb(241, 236, 239) 0%, rgb(211, 133, 207) 100%);
+   
+  }

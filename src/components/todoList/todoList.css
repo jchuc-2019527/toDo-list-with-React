@@ -1,0 +1,15 @@
+.todoList-container{
+    margin: 30px 0px;
+    pad: 5px 0px; 
+    width: 92%;
+    height: 500px;
+    margin-left: 5%;
+    overflow-y: auto;
+    font-size: 20rem;
+}
+.errMessage{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #095bfe;
+}
